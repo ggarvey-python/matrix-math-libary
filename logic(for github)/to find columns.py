@@ -21,4 +21,31 @@ else:
 
 finally:
     print('exit success!!!')
+    
+rows = []
+
+try:
+    non = 0
+    for i in range(100):
+        test_matrix[i][non]
+        non+=1
+except:
+    pass
+    #print(non)
+for num in test_matrix[0]:
+    pass
+
+number_range = []
+##
+for i in range(len(test_matrix[0])):
+    number_range.append(i)
+    
+for i in range(len(number_range)):
+    for x in range(len(test_matrix)):
+        
+        rows.append(test_matrix[x][i])
+        
+print(rows)
+    
+
         
