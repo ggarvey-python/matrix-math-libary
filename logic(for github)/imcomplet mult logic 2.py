@@ -105,23 +105,23 @@ else:
 
 test_list = []
 
-for i in range(largest):
-    test_list.append(column_list[i] * rows2[i])
-    
+#39
 
-print(test_list)
+##columns 
+##columns2
 
-
-print(sum(test_list))
-
+#rows
+#rows2
 
 
-
-
+for i in range(len(column_list)):
+    print(rows[i] * column_list2[i])
 
 
 
 
+
+print(len(column_list))
 
 
 
