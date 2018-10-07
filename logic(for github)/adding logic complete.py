@@ -1,3 +1,6 @@
+##THIS IS AN OLD FILE AND IS LIKLY TO BE DEPRECATED
+##
+
 import numpy as np
 import math
 
