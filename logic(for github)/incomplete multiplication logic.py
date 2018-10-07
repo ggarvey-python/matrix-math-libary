@@ -49,6 +49,10 @@ rows = []
 for i in range(len(test_matrix[0])):                                  
     for x in range(len(test_matrix)):
         
+
+
+print(len(column_list))
+
         rows.append(test_matrix[x][i])
         
 print('rows 1 : {}'.format(rows))
