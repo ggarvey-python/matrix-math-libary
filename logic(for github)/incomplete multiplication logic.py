@@ -28,10 +28,10 @@ num_of_row = []
 
 for num in test_matrix[0]:
     num_of_row.append(num)
-##this one deos the counting
+#this one deos the counting
 num_of_row = len(num_of_row)
 print('number of rows in matrix 1 : {}'.format(num_of_row))
-##########################################################################
+########################################################################
 
 num_of_row2 = []
 
@@ -105,17 +105,31 @@ print('columns 2 : {}'.format(column_list2))
 
 if columns > columns2:
     largest = columns
+    smallest = columns2
 elif columns < columns2:
     largest = columns2
+    smallest = columns
 elif columns == columns2:
     largest = columns
+    smallest = columns2
 else:
     print('either failed or magic')
 
+list_of_multipyed_values = []
 
 
+for ii in range(3):
+    for i in range(4): 
+ 
+        list_of_multipyed_values.append(test_matrix[ii][i] * rows2_format[ii][i])
 
-#39
+t = np.array(list_of_multipyed_values)
+finished = np.array_split(t, 3)
+
+for i in range(3):
+    print(sum(finished[i]))
+
+#79
 
 ##columns 
 ##columns2
