@@ -131,7 +131,12 @@ finished = np.array_split(t, largest*largest)
 
 
 #i in range of expected number of values at the end
+finished_multiplyed = []
 for i in range(largest*largest):
-    print(sum(finished[i]))
+    finished_multiplyed.append(sum(finished[i]))
 
+    
+finished_multiplyed = np.array(finished_multiplyed)
+finished_multiplyed = np.array_split(finished_multiplyed, num_of_row2)
 
+print(np.array(finished_multiplyed))
