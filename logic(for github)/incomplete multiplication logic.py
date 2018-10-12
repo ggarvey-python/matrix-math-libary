@@ -119,12 +119,16 @@ list_of_multipyed_values = []
 
 
 for ii in range(3):
-    for i in range(4): 
+    for x in range(3):
+        for i in range(4):
+        
  
-        list_of_multipyed_values.append(test_matrix[ii][i] * rows2_format[ii][i])
+            list_of_multipyed_values.append(test_matrix[x][i] * rows2_format[ii][i])
 
 t = np.array(list_of_multipyed_values)
-finished = np.array_split(t, 3)
+finished = np.array_split(t, 9)
 
-for i in range(3):
+for i in range(9):
     print(sum(finished[i]))
+
+
