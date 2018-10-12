@@ -128,15 +128,3 @@ finished = np.array_split(t, 3)
 
 for i in range(3):
     print(sum(finished[i]))
-
-#79
-
-##columns 
-##columns2
-
-#rows
-#rows2
-#print(rows)
-
-
-
