@@ -4,14 +4,13 @@ import numpy as np
 #NOT THE COMPLETE APP
 
 
-test_matrix = [[3,2,3,6],
-               [4,3,7,2],
-               [3,4,2,7]]
+test_matrix = [[5,2,2],
+               [9,3,9],
+               [5,5,4]]
 
-test_matrix2 = [[7,3,2],
-                [5,3,5],
-                [6,2,6],
-                [5,3,5]]
+test_matrix2 = [[6,3,8],
+                [3,5,2],
+                [3,5,8]]
 
 
 ## to see the amount of numbers in each matrix
@@ -67,7 +66,7 @@ for i in range(len(test_matrix2[0])):
         
 x = np.array(rows2)
 
-y = np.array_split(x, 3)
+y = np.array_split(x, len(test_matrix2[0]))
 
 for i in range(len(test_matrix2[0])):
     rows2_format.append(y[i])
@@ -117,18 +116,22 @@ else:
 
 list_of_multipyed_values = []
 
+##the most efficent way to multiply the matrices out
+##
 
-for ii in range(3):
-    for x in range(3):
-        for i in range(4):
-        
- 
-            list_of_multipyed_values.append(test_matrix[x][i] * rows2_format[ii][i])
+for i in range(largest):
+    for ii in range(largest):
+        list_of_multipyed_values.append(np.dot(np.array(test_matrix[i]), rows2_format[ii]))
 
 t = np.array(list_of_multipyed_values)
-finished = np.array_split(t, 9)
+#splits an arrat 9 is the expexted number of values
 
-for i in range(9):
+expected_values = smallest * smallest
+finished = np.array_split(t, largest*largest)
+
+
+#i in range of expected number of values at the end
+for i in range(largest*largest):
     print(sum(finished[i]))
 
 
