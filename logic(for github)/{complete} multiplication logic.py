@@ -139,4 +139,6 @@ for i in range(largest*largest):
 finished_multiplyed = np.array(finished_multiplyed)
 finished_multiplyed = np.array_split(finished_multiplyed, num_of_row2)
 
-print(np.array(finished_multiplyed))
+finished_multiplyed = np.array(finished_multiplyed)
+
+print(finished_multiplyed)
