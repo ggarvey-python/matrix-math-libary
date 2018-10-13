@@ -23,15 +23,15 @@ print('numbers in columns (matrix 2) : {}'.format(columns2))
 
 ###########################################################################
 # the amount of rows in eact matrix
-num_of_row = []
-
-for num in test_matrix[0]:
-    num_of_row.append(num)
-#this one deos the counting
-num_of_row = len(num_of_row)
-print('number of rows in matrix 1 : {}'.format(num_of_row))
-########################################################################
-
+##num_of_row = []
+##
+##for num in test_matrix[0]:
+##    num_of_row.append(num)
+###this one deos the counting
+##num_of_row = len(num_of_row)
+##print('number of rows in matrix 1 : {}'.format(num_of_row))
+##########################################################################
+##
 num_of_row2 = []
 
 for num in test_matrix2[0]:
@@ -43,14 +43,14 @@ print('number of rows in matrix 1 : {}'.format(num_of_row2))
 #######################################################################
 ##rows is the rows in matrix1 placed out in a line for simplicity
 
-rows = []
-
-for i in range(len(test_matrix[0])):                                  
-    for x in range(len(test_matrix)):
-        
-        rows.append(test_matrix[x][i])
-        
-print('rows 1 : {}'.format(rows))
+##rows = []
+##
+##for i in range(len(test_matrix[0])):                                  
+##    for x in range(len(test_matrix)):
+##        
+##        rows.append(test_matrix[x][i])
+##        
+##print('rows 1 : {}'.format(rows))
 
 
 
@@ -117,7 +117,7 @@ else:
 list_of_multipyed_values = []
 
 ##the most efficent way to multiply the matrices out
-##
+
 
 for i in range(largest):
     for ii in range(largest):
@@ -141,4 +141,7 @@ finished_multiplyed = np.array_split(finished_multiplyed, num_of_row2)
 
 finished_multiplyed = np.array(finished_multiplyed)
 
-print(finished_multiplyed)
+print('''{}
+exit success '''.format(finished_multiplyed))
+
+####################################################################################
