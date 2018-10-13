@@ -4,13 +4,19 @@ import numpy as np
 #NOT THE COMPLETE APP
 
 
-test_matrix = [[8,4,2,2],
-               [6,2,5,7]]
+test_matrix = [[8,4,2,2,7],
+               [6,2,5,7,3],
+               [4,3,7,2,8],
+               [5,2,8,2,9],
+               [2,7,4,6,5],
+               [2,9,4,7,5],
+               [7,3,6,2,0]]
 
-test_matrix2 = [[4,2],
-                [2,3],
-                [9,1],
-                [6,3]]
+test_matrix2 = [[4,2,5,3,8,3,7],
+                [2,3,6,3,5,8,3],
+                [9,1,4,2,8,5,8],
+                [6,3,3,7,3,7,4],
+                [1,7,4,6,2,7,9]]
 
 
 ## to see the amount of numbers in each matrix
@@ -94,26 +100,32 @@ list_of_multipyed_values = []
 ##the most efficent way to multiply the matrices out
 
 
-for i in range(smallest):
-    for ii in range(smallest):
+for i in range(largest):
+    for ii in range(largest):
         list_of_multipyed_values.append(np.dot(np.array(test_matrix[i]), rows2_format[ii]))
 
+print(list_of_multipyed_values)
 t = np.array(list_of_multipyed_values)
 #splits an arrat 9 is the expexted number of values
 
 
-finished = np.array_split(t, smallest*2)
+finished = np.array_split(t, num_of_row2)
 
 
 #i in range of expected number of values at the end
+##finished_multiplyed = []
+##for i in range(smallest*2):
+##    finished_multiplyed.append(sum(finished[i]))
+##
+##    
 finished_multiplyed = []
-for i in range(smallest*2):
-    finished_multiplyed.append(sum(finished[i]))
+##finished_multiplyed = np.array_split(finished_multiplyed, 49)
+##
+
+for i in finished:
+    finished_multiplyed.append(i)
 
     
-finished_multiplyed = np.array(finished_multiplyed)
-finished_multiplyed = np.array_split(finished_multiplyed, smallest*2)
-
 finished_multiplyed = np.array(finished_multiplyed)
 
 print('''{}
