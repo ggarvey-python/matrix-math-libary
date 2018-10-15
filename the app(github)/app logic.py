@@ -10,8 +10,7 @@ test_matrix_old = [[8, 4],
                    [5, 3]]
 
 test_matrix2_old = [[4, 2],
-                [2, 3],
-                [6,3]]
+                   [2, 3] ]
 test_matrix = []
 
 test_matrix2 = []  # type List[int]
@@ -132,7 +131,18 @@ def matrix_multipying_logic(x, y, smallest, largest, test_matrix, test_matrix2):
     finished_multiplyed = np.array(finished_multiplyed)
 
     print('''{}
-    exit success '''.format(finished_multiplyed))
+    exit success multiply '''.format(finished_multiplyed))
     print(largest, smallest)
 
-matrix_multipying_logic(x, y, smallest, largest, test_matrix, test_matrix2)
+matrix_multipying_logic(x, y, smallest, largest, test_matrix, num_of_row)
+
+def adding_logic(column_list, column_list2, test_matrix):
+    added = []
+    for i in range(len(column_list)):
+        added.append(column_list[i] + column_list2[i])
+    #added = np.array(added)
+    added = np.array_split(added, num_of_row)
+    added = np.array(added)
+    print(added)
+
+adding_logic(column_list, column_list2, num_of_row)
