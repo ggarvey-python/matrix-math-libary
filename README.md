@@ -1,7 +1,12 @@
 # matrix-math-libary
 
-to be added later
-currently im just setting up the logic but more will be added later
-the logic will stay in the currnt logic folder
 
-i need someone to build a gui
+# About
+welcome to the completely open source matrix math library version 1.0 
+this is a alpha version for developers to test and work with
+
+# credits
+
+backed developers: Gerard Harvey
+
+GUI: 
