@@ -7,6 +7,6 @@ this is a alpha version for developers to test and work with
 
 # credits
 
-backed developers: Gerard Harvey
+back-end developers: Gerard Garvey
 
 GUI: 
