@@ -10,3 +10,7 @@ this is a alpha version for developers to test and work with
 back-end developers: Gerard Garvey
 
 GUI: 
+
+
+# version
+C++ version soon
